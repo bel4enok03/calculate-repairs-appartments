@@ -1,0 +1,90 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1641912076456-c23ac41bdd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(2, 54, 39, 0.9);
+    } 
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    background-color:rgba(2, 54, 39, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vh;
+    height: 90vh;
+    border-radius: 40px;
+    color: white;
+    padding: 10px;
+    }
+
+h2 {
+    align-items: center;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    }
+
+input{
+    padding: 5px;
+}
+
+#addTypeOfRepair {
+    background-color:#CEE5D0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#addTypeOfHouse {
+    background-color:#CEE5D0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+#typeOfRepair{
+    display: none;
+}
+#typeOfHouse{
+    display: none; 
+}
+
+#btn {
+    background-color:#76BA99;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    transition: all 0.2s linear;
+    }
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #94B49F;
+    color: white;
+    }
+
+#showTotalAmountToPay{
+    display: flex;
+}
+
+#amountSplit {
+    background-color: rgba(118, 186, 153, 0.2);
+    margin: 5px;
+    padding: 5px;
+    width: 30vh;
+    border-radius: 10px;
+    border: 0.5px solid black;
+}

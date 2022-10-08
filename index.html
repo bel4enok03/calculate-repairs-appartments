@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate repairs appartments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Калькулятор стоимости ремонта</h2>
+            <p>Базовая цена 1м2 = 4 тыс. рублей</p>
+    
+            <form>
+                <p>Площадь квартиры</p>
+                <span>м2
+                    <input type="text" id="square" placeholder="площадь">
+                </span>
+            
+                <p>Тип ремонта</p>
+                
+                <button id="addTypeOfRepair">Тип ремонта</button>
+                <select id="typeOfRepair">
+                    <option disabled>Выберите тип ремонта</option>
+                    <option value="0.00" selected>Косметический</option>
+                    <option value="0.30">Капитальный +30%</option>
+                    <option value="0.50">Под ключ +50%</option>
+                </select>
+    
+                <button id="addTypeOfHouse">Тип жилья</button>
+                <select id="typeOfHouse">
+                    <option disabled>Выберите тип жилья</option>
+                    <option value="0.00" selected>Новостройка</option>
+                    <option value="0.10">Вторичка +10%</option> 
+                </select>
+    
+                <button id="btn">Рассчитать</button>
+    
+            </form>
+            <div id="showTotalAmountToPay">
+                <div id="amountSplit">
+                    <p>Сумма</p>
+                    <span id="totalAmount"></span>
+                    <span>руб</span>
+                </div>
+        </div>
+    
+        </div>
+
+    </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
